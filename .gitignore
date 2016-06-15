@@ -58,6 +58,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+.vscode/
 
 # Roslyn cache directories
 *.ide/
@@ -86,4 +87,4 @@ src/scaffolding.config
 
 # JetBrains Rider
 .idea/
-*.sln.iml
+*.sln.iml.vscode/

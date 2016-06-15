@@ -10,7 +10,6 @@ namespace PerfDemos
     {
         static void Main()
         {
-            Boxing.Demo();
             Enum.Demo(ConsoleModifiers.Control | ConsoleModifiers.Shift);
         }
     }
