@@ -7,8 +7,8 @@ namespace Benchmarks
     {
         static void Main(string[] args)
         {
-            //BenchmarkRunner.Run<Lambdas>();
-            BenchmarkRunner.Run<Loops>();
+            BenchmarkRunner.Run<Lambdas>();
+            //BenchmarkRunner.Run<Loops>();
             //BenchmarkRunner.Run<Enums>();
         }
     }

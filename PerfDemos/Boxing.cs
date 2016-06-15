@@ -16,7 +16,7 @@ namespace PerfDemos
             }
         }
 
-        private static void DoSomethingInALoop(object o)
+        public static void DoSomethingInALoop(object o)
         {
         }
     }

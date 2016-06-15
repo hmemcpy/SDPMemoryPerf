@@ -15,7 +15,7 @@ namespace Benchmarks.Tests
         [Benchmark]
         public bool WithCapturedVariable()
         {
-            string data = "via lambda (that has a \"closure\")";
+            string data = "via lambda (that has a closure)";
             return Do(() => SayHelloStatic(data));
         }
 
@@ -27,6 +27,14 @@ namespace Benchmarks.Tests
 
         [Benchmark]
         public bool MethodGroup() => Do(SayHello);
+
+
+
+
+
+
+
+
 
         void SayHello() { }
         void SayHello(string s) => GC.KeepAlive(s);

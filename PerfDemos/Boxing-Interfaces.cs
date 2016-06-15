@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PerfDemos
 {
-    public class Boxing
+    public class BoxingInterfaces
     {
         public static void Demo()
         {
@@ -14,12 +14,12 @@ namespace PerfDemos
             {
                 using (AcquireLock()) 
                 {
-                    // Do something that requires cleanup
+                    // Do something that requires locking
                 }
             }
         }
 
-        private static IDisposable AquireLock()
+        private static IDisposable AcquireLock()
         {
             return new LockCookie();
         }
@@ -28,7 +28,7 @@ namespace PerfDemos
         {
             public void Dispose()
             {
-                // cleanup
+                // free the lock
             }
         }
     }
